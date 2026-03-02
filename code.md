@@ -45,6 +45,11 @@ It intentionally avoids project-, framework-, vendor-, and repository-specific g
 - Apply least privilege: scope permissions, credentials, and access as narrowly as possible.
 - Avoid dynamic code execution (e.g., eval/templated SQL) unless there is no safer alternative and it is reviewed.
 
+## Backward compatibility
+
+ - Do not maintain backward compatibility unless explicitly instructed.
+ - If you see potential backward compatibility issues - ask user explicitly wether to maintain backward compatibility.
+
 ## Configuration & portability
 
 - Configuration should be explicit, versioned (when appropriate), and documented.
