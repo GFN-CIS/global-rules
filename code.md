@@ -74,6 +74,7 @@ It intentionally avoids project-, framework-, vendor-, and repository-specific g
 ## Development practices
 
 - Before writing new code, first analyze the project for existing functionality that can be reused (internal utilities, shared modules, existing services, established patterns).
+- For platform/framework/language-specific rules, in addition to this file, also check relevant files in the `specific` folder.
 - Avoid ad-hoc solutions. New changes must fit the project’s architecture and established patterns.
 - Avoid “hotfixes” when a proper solution is feasible. If a hotfix is unavoidable, align it with the user and document the trade-offs and follow-up plan.
 - Follow the code-organization principles used in the project (e.g., OOP-style codebases should remain OOP; modular codebases should remain modular; functional codebases should remain functional). If the requested functionality does not fit existing approaches, agree on the approach with the user before introducing a new paradigm.
@@ -85,6 +86,7 @@ It intentionally avoids project-, framework-, vendor-, and repository-specific g
     - and there is no serious reason to keep it separate (e.g., a stable public API, reuse expected soon, complex test isolation, performance constraints, security boundaries).
 - Regularly sanity-check that we are not reinventing the wheel: prefer mature, actively maintained libraries/tools (as of 2026) over bespoke implementations.
 - When introducing or using external dependencies, keep them up to date (as of 2026) unless the project documentation explicitly pins or forbids specific versions.
+- When considering a library/framework/plugin/etc., always verify that it is updated frequently enough and that the chosen version is current for the year 2026.
 - Always check for leftover/dead code introduced by refactors (unused functions, unreachable branches, stale TODOs, commented-out blocks). Ask the user for permission before removing it, and remove it only with explicit user approval.
 
 ## Testing (general expectations)
