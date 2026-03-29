@@ -18,6 +18,11 @@ It intentionally avoids project-, framework-, vendor-, and repository-specific g
 - **DRY, but not dogmatic**: deduplicate only when it reduces total complexity and maintenance cost.
 - **Keep it readable**: prefer clear names and small units of code over clever tricks.
 
+## Naming consistency
+- Some languages platforms or frameworks can denote best practices for naming styles and structures. In this case the model should consider it as well and choose best fit approach.
+- entities names styling should be consistent within parent entity->module->project for same entity classes. e.g. if parent entity uses snake_case for variables - model should use it, if parent uses CamelCase for variables - model should use it and so forth.  
+- entities naming structure should  be consistent within project for the same class and function of entities. For example, if some flag variables within module has structure flag_entity_flagname model should consider use it instead of, say entity_flag_flagname, or only flagname. 
+
 ## Error handling (fail fast)
 
 - Do not swallow errors to “keep things running” if correctness is impacted.
