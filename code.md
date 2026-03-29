@@ -68,7 +68,7 @@ It intentionally avoids project-, framework-, vendor-, and repository-specific g
   - **Module/package README**: the most general overview (architecture/usage), linking to module/class docs.
 - Any deviation from the project’s current ideology/architecture or from common best practices must be documented: what we changed and why.
 - Functions/methods/classes must include docstrings (or the language’s equivalent structured API documentation comments) in the same style/format adopted by the repository (be consistent within the project).
-- Keep docs close to the code they describe (README in the relevant directory/module).
+- Keep docs close to the code they describe (README in the relevant directory/module): function/methods/classes/modules - in appropriate docstrings. Packages - in readme.md within package folder.
 - Update documentation when changing behavior, public APIs, or operational requirements.
 
 ## Development practices
