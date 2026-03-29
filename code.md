@@ -18,6 +18,9 @@ It intentionally avoids project-, framework-, vendor-, and repository-specific g
 - **DRY, but not dogmatic**: deduplicate only when it reduces total complexity and maintenance cost.
 - **Keep it readable**: prefer clear names and small units of code over clever tricks.
 
+## Over engineering
+- Avoid excessive configurability. Always consider during the plan phase does something should be configurable or it could be constant? If unsure - ask user directly with list of all configuration entities you doubt about.
+
 ## Naming consistency
 - Some languages platforms or frameworks can denote best practices for naming styles and structures. In this case the model should consider it as well and choose best fit approach.
 - entities names styling should be consistent within parent entity->module->project for same entity classes. e.g. if parent entity uses snake_case for variables - model should use it, if parent uses CamelCase for variables - model should use it and so forth.  
