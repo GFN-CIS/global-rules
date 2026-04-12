@@ -168,7 +168,7 @@ Keep references up to date when code moves.
 
 ## Tags / categories (if used in the project)
 
-If the project uses test tags/markers (e.g., `unit`, `integration`, `slow`, `critical`, `regression`):
+Tests must use markers (e.g., `unit`, `integration`, `slow`, `critical`, `regression`, `migration`):
 
 - use them consistently,
 - document what each tag means,
