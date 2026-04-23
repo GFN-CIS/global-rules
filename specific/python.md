@@ -8,3 +8,5 @@
   - Ensure using pytest-cov
 - unit tests should be created in test directory close to the module they are testing.
 - unit tests should be created in auto-discoverable behaviour for pytest.
+- use vulture or alternatives to find dead code at linting stage.
+- 
