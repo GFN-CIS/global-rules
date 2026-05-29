@@ -63,7 +63,7 @@ Always choose the lowest-cost test type that reliably validates the behavior.
 
 ## Test placement (where tests live)
 
-- **Unit tests** should live *next to the code they test* (inside/near the module/package).
+- **Unit tests** should live *next to the code they test* : inside/near the module/package in folder like 'tests' or another best-practice language or framework-specific folder.
   - Goal: local ownership, easy navigation, and small, cohesive test suites.
 - **End-to-end (E2E) tests** should be placed based on scope:
   - **Module-level** E2E tests: when the scenario touches only one module/component and does not require project-wide wiring.
